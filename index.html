@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset='utf-8'>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!-- Define a versão do IE -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Define a viewport para dispositivos móveis -->
+    <!-- Descrição da atividade do site -->
+    <meta name="description" content="Buscador de petshops com melhores preços e acessibilidade">
+    <!-- Palavras-chave para SEO -->
+    <meta name="keywords" content="Petshop Barato, Petshop mais perto, petshop acessível, melhor petshop">
+    <!-- Referência para o arquivo CSS externo -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <!-- Referência para o arquivo de ícone e redirecionamento Whatsapp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Referência para o documento JavaScript -->
+    <script src='main.js'></script>
+    <!-- Título da página -->
+    <title>MeuPetShopIdeal_Home</title>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <!-- Inserção do logotipo no canto esquerdo do menu -->
+        <div class="logo">
+            <img src="img/logo.png " width="250px" height="80px">
+        </div>
+
+        <!-- Definição do topo do site com menu de opções -->
+        <div class="menu">
+            <a href="index.html">Home</a><!-- Link para a página Home -->
+            <a href="parcerias.html">Parcerias</a><!-- Link para a página Parcerias -->
+            <a href="quem_Somos.html">Quem Somos</a> <!-- Link para a página Quem Somos -->
+            <a href="fale_Conosco.html" id="botao_Fale_Conosco">Fale Conosco</a><!-- Link para a página Fale Conosco -->
+        </div>
+
+    </nav>
+
+    <!-- Definição da parte central do site -->
+    <header class="header">
+
+        <div class="formulario">
+            <br><br>
+            <h2 style="font-size: 40px;text-align: left;">Você está prestes a encontrar o petshop perfeito para
+                você</h2>
+
+            <form>
+                <label for="data" class="perguntas_Form">Data do Atendimento (dd/mm/aaa)?</label><br>
+                <input type="text" id="data_Agendamento" name="data_Agendamentos" required><br><br>
+                <label for="quantidade_Pequeno_Porte" class="perguntas_Form">Quantos animais pequenos?</label><br>
+                <input type="number" id="quantidade_Pequeno_Porte" name="quantidade" min="0" required><br><br>
+                <label for="quantidade_Grande_Porte" class="perguntas_Form">Quantos animais grandes?</label><br>
+                <input type="number" id="quantidade_Grande_Porte" name="quantidade_Grande_Porte" min="0"
+                    required><br><br>
+                <button onclick="encontrarMelhorPetshop()">Enviar</button>
+                <!-- Botão para enviar o formulário -->
+            </form>
+
+        </div>
+
+        <div class="cachorro_Caramelo">
+            <img src="img/cachorro_Caramelo.jpg" id="diaDePetshop">
+            <!-- Imagem de um cachorro -->
+        </div>
+
+        <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5571982586268" target="_blank">
+            <!-- Link para o WhatsApp -->
+            <i class="fa fa-whatsapp"></i>
+            <!-- Ícone do WhatsApp -->
+        </a>
+
+    </header>
+
+    <div id="resultado"></div>
+    <!-- Div para exibir resultados -->
+
+    <script src="js/main.js"></script>
+    <!-- Script JavaScript -->
+</body>
+
+</html>
